@@ -1,0 +1,9 @@
+env
+.pytest_cache
+tests/.pytest_cache
+tests/tests.py
+tests/geckodriver.log
+geckodriver.log
+.idea
+__pycache__/
+*.py[cod]
