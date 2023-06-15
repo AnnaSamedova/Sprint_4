@@ -8,28 +8,28 @@ class QuestionsPageScooter(BasePage):
     exit_accordion_panel = (By.CLASS_NAME, 'accordion__heading')
     open_accordion_panel = (By.XPATH, './/div[@aria-disabled="true"]')
 
-    question_price_and_payment = (By.XPATH, './/div[contains(@id, "accordion__heading-0") and contains(@class, "accordion__button")]')
+    question_price_and_payment = (By.XPATH, './/div[@id="accordion__heading-0"]')
     answer_price_and_payment = (By.XPATH, './/div[@id="accordion__panel-0"]/p')
 
-    question_multiple_scooter = (By.XPATH, './/div[contains(@id, "accordion__heading-1") and contains(@class, "accordion__button")]')
+    question_multiple_scooter = (By.XPATH, './/div[@id = "accordion__heading-1"]')
     answer_multiple_scooter = (By.XPATH, './/div[@id="accordion__panel-1"]/p')
 
-    question_rental_time = (By.XPATH, './/div[contains(@id, "accordion__heading-2") and contains(@class, "accordion__button")]')
+    question_rental_time = (By.XPATH, './/div[@id = "accordion__heading-2"]')
     answer_rental_time = (By.XPATH, './/div[@id="accordion__panel-2"]/p')
 
-    question_rental_date = (By.XPATH, './/div[contains(@id, "accordion__heading-3") and contains(@class, "accordion__button")]')
+    question_rental_date = (By.XPATH, './/div[@id = "accordion__heading-3"]')
     answer_rental_date = (By.XPATH, './/div[@id="accordion__panel-3"]/p')
 
-    question_extend_order = (By.XPATH, './/div[contains(@id, "accordion__heading-4") and contains(@class, "accordion__button")]')
+    question_extend_order = (By.XPATH, './/div[@id = "accordion__heading-4"]')
     answer_extend_order = (By.XPATH, './/div[@id="accordion__panel-4"]/p')
 
-    question_scooter_charging = (By.XPATH, './/div[contains(@id, "accordion__heading-5") and contains(@class, "accordion__button")]')
+    question_scooter_charging = (By.XPATH, './/div[@id = "accordion__heading-5"]')
     answer_scooter_charging = (By.XPATH, './/div[@id="accordion__panel-5"]/p')
 
-    question_cancel_order = (By.XPATH, './/div[contains(@id, "accordion__heading-6") and contains(@class, "accordion__button")]')
+    question_cancel_order = (By.XPATH, './/div[@id = "accordion__heading-6"]')
     answer_cancel_order = (By.XPATH, './/div[@id="accordion__panel-6"]/p')
 
-    question_scooter_delivery = (By.XPATH, './/div[contains(@id, "accordion__heading-7") and contains(@class, "accordion__button")]')
+    question_scooter_delivery = (By.XPATH, './/div[@id = "accordion__heading-7"]')
     answer_scooter_delivery = (By.XPATH, './/div[@id="accordion__panel-7"]/p')
 
     @allure.step('Скролл к разделу "Вопросы о важном"')

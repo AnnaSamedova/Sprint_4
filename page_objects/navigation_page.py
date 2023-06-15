@@ -7,11 +7,11 @@ import allure
 
 class NavigationPageScooter(BasePage):
 
-    logo_scooter = (By.XPATH, './/a[contains(@class, "Header_LogoScooter") and contains(@href, "/")]')
-    logo_yandex = (By.XPATH, './/a[contains(@class, "Header_LogoYandex") and contains(@href, "//yandex.ru")]')
-    button_order_in_header = (By.XPATH, './/div[contains(@class, "Header_Nav__AGCXC")]/button[contains(text(), "Заказать")]')
-    element_home_page = (By.XPATH, './/div[contains(@class, "Home_Header__iJKdX") and contains(text(), "Самокат ")]')
-    logo_dzen = (By.XPATH, './/a[contains(@aria-label, "Логотип Дзен") and contains(@href, "https://dzen.ru/")]')
+    logo_scooter = (By.XPATH, './/img[@alt = "Scooter"]')
+    logo_yandex = (By.XPATH, './/img[@alt = "Yandex"]')
+    button_order_in_header = (By.XPATH, './/button[@class = "Button_Button__ra12g"]')
+    element_home_page = (By.XPATH, './/div[contains(@class, "Home_Header__iJKdX")]')
+    logo_dzen = (By.XPATH, './/a[(@aria-label = "Логотип Дзен") and contains(@href, "https://dzen.ru/")]')
 
     @allure.step('Нажать на логотип "Самокат"')
     def click_on_logo_scooter(self):

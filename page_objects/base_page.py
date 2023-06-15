@@ -27,3 +27,7 @@ class BasePage:
     @allure.step('Принять куки')
     def cookie_accept(self):
         self.find_element_located(BasePage.cookie).click()
+
+    @allure.step('Нажать на элемент')
+    def click_on_any_element(self, locator):
+        self.find_element_located(locator).click()

@@ -1,3 +1,5 @@
+import time
+
 import allure
 from page_objects.questions_page import QuestionsPageScooter
 
